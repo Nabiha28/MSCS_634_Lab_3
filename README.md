@@ -15,8 +15,28 @@ The purpose of this lab is to explore and evaluate partitioned clustering techni
   * **K-Means** creates a centroid calculated as the average coordinate space of a cluster, which may represent an idealized, synthetic data point.
   * **K-Medoids** strictly chose actual existing rows from the dataset as center anchors (medoids). This makes the K-Medoids interpretation highly valuable when real-world representative exemplars are needed.
   * In terms of positioning, K-Means showed cleaner boundaries in continuous 2D PCA space, while K-Medoids demonstrated robust resistance to potential boundary noise.
+## Dataset
 
----
+Wine Dataset from the Scikit-learn library
+
+Number of Samples: 178
+
+Number of Features: 13
+
+Number of Classes: 3
+
+## Key Results
+
+- The Wine dataset was standardized using Z-score normalization.
+- K-Means clustering was performed using three clusters.
+- K-Medoids clustering was also performed using three clusters.
+- Silhouette Score was used to evaluate cluster separation.
+- Adjusted Rand Index (ARI) was used to compare clustering results with the actual wine classes.
+- Scatter plots were created to visualize and compare both clustering methods.
+
+## Challenges
+
+The primary challenge encountered during this lab was compatibility between the K-Medoids package and certain cloud notebook environments. Deepnote provided a compatible environment where the required package was successfully installed and executed.
 
 ## When to Use Each Algorithm
 * **K-Means:** Preferable when dealing with strictly continuous, normalized datasets where minimizing the sum of squared errors within spherical clusters is the primary goal, and computational efficiency on large data sizes is required.
