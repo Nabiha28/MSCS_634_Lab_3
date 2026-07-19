@@ -41,6 +41,21 @@ The primary challenge encountered during this lab was compatibility between the 
 ## When to Use Each Algorithm
 * **K-Means:** Preferable when dealing with strictly continuous, normalized datasets where minimizing the sum of squared errors within spherical clusters is the primary goal, and computational efficiency on large data sizes is required.
 * **K-Medoids:** Preferable when the dataset contains significant outliers or noise (since medoids are far less sensitive to extreme values than means), or when the cluster center *must* map directly to a real, interpretable data observation.
+* ## Analysis of Clustering Results
+
+The K-Means and K-Medoids algorithms were applied to the standardized Wine dataset using three clusters.
+
+The clustering quality was evaluated using the Silhouette Score and the Adjusted Rand Index (ARI).
+
+The algorithm with the higher Silhouette Score produced more compact and well-separated clusters.
+
+The algorithm with the higher ARI demonstrated better agreement between the predicted clusters and the actual wine classes.
+
+K-Means is computationally efficient and performs well on datasets with spherical clusters.
+
+K-Medoids is generally more robust to outliers because it selects actual data points as cluster centers instead of calculating the mean.
+
+Based on the obtained results, both algorithms successfully identified meaningful clusters, while their performance differed slightly depending on the evaluation metric.
 
 ---
 
